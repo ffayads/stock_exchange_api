@@ -1,0 +1,5 @@
+version: 3.5.1
+
+service:
+    app:
+        image: ffayads/stock_exchange_api:latest

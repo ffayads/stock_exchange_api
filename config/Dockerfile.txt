@@ -1,0 +1,7 @@
+FROM golang
+LABEL key="felixfayad@gmail.com"
+WORKDIR $GOPATH/src/github.com/api/stock_exchange_api/
+ENV GO111MODULE=auto
+RUN go build -o stock_exchange_api
+EXPOSE 5000
+CMD ["./stock_exchange_api"]
